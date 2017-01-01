@@ -1,6 +1,8 @@
 import React, { PropTypes, Component } from 'react';
 import classnames from 'classnames';
-import NavBar from '../..//components/NavBar';
+import NavBar from '../../components/NavBar';
+import {Routes, Link, IndexLink} from '../../routes';
+import About from '../About';
 
 import logo from './logo.svg';
 import './style.css';
@@ -13,10 +15,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <NavBar/>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <ul className="NavBar">
+          <li><Link to="/" activeClassName="active">>Home</Link></li>
+          <li><Link to="/About" activeClassName="active">>About</Link></li>
+          <li>About</li>
+        </ul>
+        <div className="content">
+         {this.props.children}
+        </div>
       </div>
     );
   }
