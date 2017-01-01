@@ -14,7 +14,7 @@ export default class About extends Component {
     return (
         <div className={classnames('About', className)} {...props}>
           <h1>
-            About
+           Home
           </h1>
           <p> Bilippity bloo!</p>
         </div>
