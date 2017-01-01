@@ -13,7 +13,7 @@ export default class About extends Component {
     return (
         <div className={classnames('NotFound', className)} {...props}>
           <h1>
-            About
+            404 <small>Not Found :(</small>
           </h1>
         </div>
       );
