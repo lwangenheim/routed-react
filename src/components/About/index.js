@@ -16,7 +16,7 @@ export default class About extends Component {
           <h1>
             About
           </h1>
-          <p> Bilippity bloo!</p>
+          <p>Test Bilippity bloo!</p>
         </div>
       );
   }

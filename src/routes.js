@@ -6,8 +6,6 @@ import About from './components/About';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 
-const destination = document.querySelector("#container");
-
 const Routes = (props) => (
     <Router {...props}>
       <Route path="/" component={App}>
@@ -15,8 +13,7 @@ const Routes = (props) => (
         <Route path="about" components={About} />
         <Route path="*" component={NotFound} />
       </Route>
-    </Router>,
-    destination
+    </Router>
   );
 
 export default Routes;
