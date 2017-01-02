@@ -9,8 +9,6 @@ import './style.css';
 
 class App extends Component {
   render() {
-    console.log(this.props.children)
-    console.log(Link);
     return (
       <div className="App">
         <div className="App-header">
